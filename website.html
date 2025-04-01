@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .yellow-button {
+            background-color: yellow;
+            border: none;
+        }
+    </style>
+
 </head>
 <body>
-    <button>
+    <button title="tooltip" class="red-button">
         save
     </button>
     <p>
         Paragraph of 
-        <button>Hello</button> 
+        <button class="yellow-button">Hello</button> 
         text
     </p>
 </body>
