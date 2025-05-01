@@ -10,17 +10,24 @@
 
     <script>
         
-        let age = 5;
-        const isHoliday = true;
+        let randomNumber = Math.random();
+        console.log(randomNumber);
+    
+        let guess = 'heads';   
+        let result = '';
 
-        if (age >= 65 && isHoliday === true) {
-            console.log('You are eligible for discount');
-        } else if (age <= 6 && isHoliday === true) {
-            console.log('You are eligible for discount');
+        if (randomNumber < 0.5) {
+            result = 'heads';
         } else {
-            console.log('You are not eligible for discount');
+            result = 'tails';
         }
-
+ 
+        if (guess === result) {
+            console.log('You win');
+        } else {
+            console.log('You lose');
+        }
+   
     </script>
 
 </body>
