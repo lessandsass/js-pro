@@ -14,20 +14,11 @@
         console.log(randomNumber);
     
         let guess = 'heads';   
-        let result = '';
 
-        if (randomNumber < 0.5) {
-            result = 'heads';
-        } else {
-            result = 'tails';
-        }
- 
-        if (guess === result) {
-            console.log('You win');
-        } else {
-            console.log('You lose');
-        }
-   
+        let result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+        guess === result ? console.log('You win') : console.log('You lose');
+     
     </script>
 
 </body>
