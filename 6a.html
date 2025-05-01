@@ -11,10 +11,11 @@
     <script>
         
         let age = 5;
+        const isHoliday = true;
 
-        if (age >= 65) {
+        if (age >= 65 && isHoliday === true) {
             console.log('You are eligible for discount');
-        } else if (age <= 6) {
+        } else if (age <= 6 && isHoliday === true) {
             console.log('You are eligible for discount');
         } else {
             console.log('You are not eligible for discount');
